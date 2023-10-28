@@ -114,6 +114,10 @@ svg {
 
 /* General styling */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: var(--fs-body);
     font-family: var(--ff);
@@ -123,6 +127,49 @@ body {
 
 p:not([class]) {
     max-width: 76ch;
+}
+
+/* Scroll up */
+
+#progress {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #0d1321;
+    background: #fcfcfc;
+    position: fixed;
+    bottom: 144px;
+    right: 144px;
+    height: 60px;
+    width: 60px;
+    border-radius: 999px;
+    z-index: 999;
+    transition: 0.4s;
+}
+
+#progress:hover {
+    transform: scale(1.2);
+}
+
+#progress-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #31e981;
+    height: calc(100% - 6px);
+    width: calc(100% - 6px);
+    border-radius: 999px;
+    font-size: 24px;
+}
+
+#progress-value i {
+    display: flex;
+    transition: 0.4s;
+}
+
+#progress:hover #progress-value i {
+    transform: translateY(-6px);
 }
 
 /* Button */
@@ -197,11 +244,6 @@ p:not([class]) {
     outline-offset: -1px;
 }
 
-.button:hover,
-.button:focus-visible {
-    transform: scale(1.05);
-}
-
 .button:hover::before,
 .button:focus-visible::before,
 .button:hover::after,
@@ -264,8 +306,15 @@ p:not([class]) {
 }
 
 .header {
+    position: fixed;
+    inset-inline: 0;
     margin-top: var(--size-700);
     z-index: 999;
+}
+
+.header a {
+    text-decoration: none;
+    color: var(--clr-neutral-100);
 }
 
 .nav-wrapper {
