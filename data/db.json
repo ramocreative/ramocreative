@@ -1,0 +1,25 @@
+{
+  "projects": [
+    {
+      "id": "imad-tech",
+      "title": "iMad Tech",
+      "desc": "anything...",
+      "owners": { "name": "Placeholder", "location": "Somewhere" },
+      "image": "https://images.unsplash.com/photo-1712916571140-3dc0a4761d18?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "tijltil-gamers",
+      "title": "TiJLTiL Gamers",
+      "desc": "anything...",
+      "owners": { "name": "Placeholder", "location": "Somewhere" },
+      "image": "https://images.unsplash.com/photo-1712916571140-3dc0a4761d18?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "falcao",
+      "title": "Falcao",
+      "desc": "anything...",
+      "owners": { "name": "Placeholder", "location": "Somewhere" },
+      "image": "https://images.unsplash.com/photo-1712916571140-3dc0a4761d18?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  ]
+}
